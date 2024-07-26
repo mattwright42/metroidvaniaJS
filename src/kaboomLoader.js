@@ -46,3 +46,44 @@ k.loadSprite("burner", "./assets/sprites/burn3r.png", {
     explode: { from: 25, to: 29 },
   },
 });
+
+k.loadSpriteAtlas("./assets/ui.png", {
+  healthBar: {
+    x: 16,
+    y: 16,
+    width: 60,
+    height: 48,
+    sliceY: 3,
+  },
+});
+
+k.loadSpriteAtlas("./assets/animations.png", {
+  cartridge: {
+    x: 125,
+    y: 145,
+    width: 134,
+    height: 16,
+    sliceX: 8,
+    anims: {
+      default: { from: 0, to: 4, loop: true, speed: 7 },
+    },
+  },
+});
+
+k.loadSprite("tileset", "./assets/tileset.png", {
+  sliceX: 33,
+  sliceY: 21,
+});
+
+k.loadSprite("background", "./assets/background.png", {
+  sliceX: 13,
+  sliceY: 25,
+});
+
+k.loadSound("notify", "./assets/sounds/notify.mp3");
+k.loadSound("boom", "./assets/sounds/boom.wav");
+k.loadSound("health", "./assets/sounds/health.wav");
+k.loadSound("flamethrower", "./assets/sounds/flamethrower.mp3");
+
+k.loadSprite("room1", "./maps/room1.png");
+k.loadSprite("room2", "./maps/room2.png");
